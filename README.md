@@ -29,9 +29,23 @@ This project is a simple backend API built with Node.js, Express, and MongoDB. I
 - ![Express][Express]
 - ![MongoDB][MongoDB]
 
-<div>
-    <img src="path/to/your/image.png" alt="Preview">
-</div>
+## Detailed explanation
+#### `index.js`
+- This is the entry point of the application.
+- It sets up the Express server, connects to the MongoDB database, and defines the middleware for parsing JSON and URL-encoded data.
+- It also imports and uses the routes described in `product.route.js`.
+
+#### `product.controller.js`
+- This file contains the logic for handling product-related requests.
+- It defines functions for getting all products, getting a product by ID, creating a new product, updating an existing product, and deleting a product.
+
+#### `product.route.js`
+- This file defines the API routes for product management.
+- It imports the controller functions and maps them to the corresponding HTTP methods and routes.
+
+#### `product.model.js`
+- This file defines the Mongoose schema and model for products.
+- It specifies the structure of the product documents in the MongoDB database.
 
 ## Project Directory Structure
 
